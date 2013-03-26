@@ -42,7 +42,7 @@ unsigned int mulmod(unsigned int a, unsigned int b, unsigned int m)
     unsigned int mask = MASK;
     while (mask)
     {
-        /*invarant: d = (a*c) % m */
+        /*invariant: d = (a*c) % m */
         c <<= 1;//c用来验证循环不变式，无实际作用
         d = (d<<1) % m;
 
