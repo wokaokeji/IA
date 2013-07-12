@@ -66,7 +66,7 @@ void stack_print(struct stack *s)
 	printf("stack:{");
 	for (i = 0; i <= s->top; i++)
 	{
-		printf("%d <-- ", s->d[i]);
+		printf("%d --> ", s->d[i]);
 	}
 	printf("NULL}\n");
 }
